@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Inversión Inmobiliaria Exclusiva</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">
+                <i class="fas fa-chart-line text-emerald-600"></i> Inversión Exclusiva
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#oportunidad" class="text-gray-600 hover:text-emerald-600 transition">Oportunidad</a>
+                <a href="#fases" class="text-gray-600 hover:text-emerald-600 transition">Fases</a>
+                <a href="#rentabilidad" class="text-gray-600 hover:text-emerald-600 transition">Rentabilidad</a>
+                <a href="#garantias" class="text-gray-600 hover:text-emerald-600 transition">Garantías</a>
+                <a href="#contacto" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg transition shadow-md hover:shadow-lg">Contactar</a>
+            </div>
+             <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:text-emerald-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#oportunidad" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50">Oportunidad</a>
+            <a href="#fases" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50">Fases</a>
+            <a href="#rentabilidad" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50">Rentabilidad</a>
+            <a href="#garantias" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50">Garantías</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700">Contactar</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-gradient text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">Oportunidad de Inversión Inmobiliaria con Retorno Garantizado</h1>
+                <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">Acceda a un lote de activos residenciales con una rentabilidad neta garantizada por contrato de entre el 25% y 35%.</p>
+                <a href="#rentabilidad" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition shadow-xl hover:shadow-2xl transform hover:scale-105">Descubrir Rentabilidad</a>
+                
+                <!-- KPI CARDS -->
+                <div class="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                    <div class="kpi-card p-6 rounded-2xl text-center">
+                        <i class="fas fa-wallet text-4xl text-emerald-400 mb-3"></i>
+                        <div class="text-3xl font-bold counter" data-target="1280000">0</div>
+                        <div class="text-gray-300">Inversión Total (€)</div>
+                    </div>
+                     <div class="kpi-card p-6 rounded-2xl text-center">
+                        <i class="fas fa-chart-pie text-4xl text-emerald-400 mb-3"></i>
+                        <div class="text-3xl font-bold"><span class="counter" data-target="25">0</span>-<span class="counter" data-target="35">0</span>%</div>
+                        <div class="text-gray-300">ROI Neto Garantizado</div>
+                    </div>
+                    <div class="kpi-card p-6 rounded-2xl text-center">
+                        <i class="fas fa-calendar-alt text-4xl text-emerald-400 mb-3"></i>
+                        <div class="text-3xl font-bold"><span class="counter" data-target="12">0</span>-<span class="counter" data-target="14">0</span></div>
+                        <div class="text-gray-300">Horizonte (Meses)</div>
+                    </div>
+                    <div class="kpi-card p-6 rounded-2xl text-center">
+                        <i class="fas fa-home text-4xl text-emerald-400 mb-3"></i>
+                        <div class="text-3xl font-bold counter" data-target="16">0</div>
+                        <div class="text-gray-300">Activos Residenciales</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPORTUNIDAD SECTION -->
+        <section id="oportunidad" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Una Ventana de Oportunidad Única</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">El secreto de la rentabilidad: compramos al por mayor y  vendemos por unidad</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow reveal">
+                        <i class="fas fa-key text-4xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Acceso Exclusivo</h3>
+                        <p class="text-gray-600">Negociación directa de un lote completo, eliminando intermediarios y asegurando un precio de compra ventajoso.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow reveal">
+                        <i class="fas fa-gem text-4xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Creación de Valor</h3>
+                        <p class="text-gray-600">La rentabilidad se basa en la diferencia entre el precio mayorista de compra y el valor de venta individual a cliente final.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow reveal">
+                        <i class="fas fa-users text-4xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Demanda Sólida</h3>
+                        <p class="text-gray-600">Fuerte demanda de vivienda por parte de compradores finales (inquilinos), lo que agiliza y asegura las ventas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FASES SECTION -->
+        <section id="fases" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Proceso Claro y Eficiente en 3 Fases</h2>
+                    <p class="text-lg text-gray-600 mt-4">Un plan de acción estructurado para maximizar la eficiencia y la transparencia.</p>
+                </div>
+                <div class="relative max-w-2xl mx-auto">
+                    <!-- Fase 1 -->
+                    <div class="timeline-item relative pl-10 pb-10 reveal">
+                        <div class="absolute left-0 top-1.5 flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-full text-white font-bold text-lg">1</div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2">Fase 1: Formalización y Adquisición</h3>
+                            <p class="text-gray-600"><span class="font-semibold">Meses 1-2.</span> Firma de contrato notarial, aportación de capital y compra del lote de inmuebles.</p>
+                        </div>
+                    </div>
+                    <!-- Fase 2 -->
+                    <div class="timeline-item relative pl-10 pb-10 reveal">
+                        <div class="absolute left-0 top-1.5 flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-full text-white font-bold text-lg">2</div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2">Fase 2: Gestión y Puesta en Valor</h3>
+                            <p class="text-gray-600"><span class="font-semibold">Meses 2-10.</span> Auditoría de activos, preparación de dossier para el inverso, inicio de las negociaciones y cierre de venta.</p>
+                        </div>
+                    </div>
+                    <!-- Fase 3 -->
+                    <div class="timeline-item relative pl-10 reveal">
+                        <div class="absolute left-0 top-1.5 flex items-center justify-center w-10 h-10 bg-emerald-600 rounded-full text-white font-bold text-lg">3</div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-2">Fase 3: Salida y Distribución de Beneficios</h3>
+                            <p class="text-gray-600"><span class="font-semibold">Meses 11-12/14.</span> Liquidación de la operación con informe detallado y distribución de beneficios garantizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RENTABILIDAD SECTION -->
+        <section id="rentabilidad" class="py-16 md:py-24 bg-gray-800 text-white">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Análisis de Rentabilidad</h2>
+                    <p class="text-lg text-gray-300 mt-4">Proyecciones financieras claras y un retorno garantizado para su capital.</p>
+                </div>
+                <div class="grid lg:grid-cols-5 gap-8 items-center">
+                    <div class="lg:col-span-3 bg-gray-700 p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-emerald-400">Proyección Financiera</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-baseline border-b border-gray-600 pb-2">
+                                <span class="text-gray-300">Capital Total Invertido:</span>
+                                <span class="text-2xl font-bold text-white">1.280.000 €</span>
+                            </div>
+                             <div class="flex justify-between items-baseline border-b border-gray-600 pb-2">
+                                <span class="text-gray-300">Previsión Ingresos Mínimos:</span>
+                                <span class="text-2xl font-bold text-white">2.000.000 €</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-gray-600 pb-2">
+                                <span class="text-gray-300">Beneficio Bruto del Proyecto:</span>
+                                <span class="text-2xl font-bold text-white">800.000 €</span>
+                            </div>
+                            <div class="flex justify-between items-baseline pt-2">
+                                <span class="text-gray-300">ROI Total del Proyecto:</span>
+                                <span class="text-2xl font-bold text-emerald-400">~56.25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 text-center bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-4">Su Beneficio Neto Garantizado</h3>
+                         <div class="flex justify-center my-6">
+                            <div id="roi-chart-animator" class="roi-chart">
+                                 <span class="text-3xl font-bold text-emerald-700"><span id="roi-chart-text">0</span>%</span>
+                            </div>
+                        </div>
+                        <p class="text-lg">Un beneficio de <span class="font-bold text-emerald-700">320.000€</span> a <span class="font-bold text-emerald-700">448.000€</span>, asegurado por contrato.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- GARANTÍAS SECTION -->
+        <section id="garantias" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Su Seguridad es Nuestra Prioridad</h2>
+                    <p class="text-lg text-gray-600 mt-4">Ofrecemos garantías sólidas para proteger su inversión y darle total tranquilidad.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal">
+                        <i class="fas fa-file-contract text-5xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Retorno Garantizado</h3>
+                        <p class="text-gray-600">El contrato notarial estipula un ROI mínimo del 25%. Nuestro beneficio está supeditado al suyo.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal">
+                        <i class="fas fa-shield-alt text-5xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Seguridad Jurídica</h3>
+                        <p class="text-gray-600">Su aportación está blindada por contrato notarial y se destina a una SL de propósito exclusivo de inversión.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal">
+                        <i class="fas fa-search-dollar text-5xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Transparencia Financiera</h3>
+                        <p class="text-gray-600">Recibirá un desglose completo de gastos y un dossier detallado de todos los activos adquiridos en su lote correspondiente.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal">
+                        <i class="fas fa-hand-holding-usd text-5xl text-emerald-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Flexibilidad de Cobro</h3>
+                        <p class="text-gray-600">Elija recibir sus beneficios al final de la operación o mediante pagos segmentados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & CONTACTO SECTION -->
+        <section id="contacto" class="py-16 md:py-24 bg-gray-800">
+            <div class="container mx-auto px-6 text-center text-white reveal">
+                <h2 class="text-3xl md:text-4xl font-bold">¿Listo para Invertir con Seguridad y Alta Rentabilidad?</h2>
+                <p class="text-lg text-gray-300 mt-4 mb-8 max-w-2xl mx-auto">Esta oportunidad exclusiva es limitada. Agendemos una reunión para revisar en detalle el proyecto y el contrato de inversión.</p>
+                <a href="mailto:[Su Correo Electrónico]?subject=Interesado en Propuesta de Inversión Inmobiliaria" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition shadow-xl hover:shadow-2xl transform hover:scale-105">
+                    <i class="fas fa-calendar-check mr-2"></i> Agendar una Reunión
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">&copy; 2025 Inmoprofit. Todos los derechos reservados.</p>
+            <p class="text-xs mt-4 max-w-3xl mx-auto">
+                <strong>Aviso Legal (Disclaimer):</strong> Este documento tiene carácter informativo y no constituye una oferta vinculante. La inversión en el mercado inmobiliario está sujeta a riesgos, incluyendo la posible fluctuación de los precios de mercado y los plazos de venta. Las cifras de rentabilidad presentadas son estimaciones basadas en nuestro análisis. La garantía de retorno preferente para el inversor está sujeta a los términos y condiciones especificados en el contrato notarial. Se recomienda al inversor realizar su propio análisis y consultar con sus asesores financieros y legales.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

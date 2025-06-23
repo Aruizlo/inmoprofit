@@ -1,0 +1,70 @@
+/*
+  File: style.css
+  Description: Contiene los estilos personalizados para la página de propuesta de inversión.
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Color de fondo general (gris muy claro) */
+}
+
+/* Estilo para el efecto de gradiente en el Hero */
+.hero-gradient {
+    background: linear-gradient(rgba(10, 20, 30, 0.85), rgba(10, 20, 30, 0.85)), url('https://images.unsplash.com/photo-1600585152225-358baf9d5ae5?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+}
+
+/* Animación para la aparición de elementos */
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Estilo para los cards de KPIs */
+.kpi-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para la barra de progreso de las fases */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    top: 2.5rem;
+    bottom: -2.5rem;
+    width: 2px;
+    background-color: #e5e7eb;
+    transform: translateX(-50%);
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+/* Estilo para el ROI Donut Chart */
+.roi-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    --p: 25; /* Porcentaje inicial */
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                conic-gradient(#059669 calc(var(--p) * 1%), #d1d5db 0);
+    transition: --p 1.5s ease-in-out;
+}
