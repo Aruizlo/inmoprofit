@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const chartText = document.getElementById('roi-chart-text');
         if (!chartText) return;
 
-        // CAMBIO: Porcentaje objetivo actualizado a 15%
+        // CAMBIO: Porcentaje objetivo actualizado a 12 (el mínimo garantizado)
         const targetPercentage = 12; 
         let start = 0;
         const duration = 1500; // Animation duration in milliseconds
