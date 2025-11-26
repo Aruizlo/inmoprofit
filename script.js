@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!chartText) return;
 
         // CAMBIO: Porcentaje objetivo actualizado a 15%
-        const targetPercentage = 15; 
+        const targetPercentage = 12; 
         let start = 0;
         const duration = 1500; // Animation duration in milliseconds
         const stepTime = 20; // Time between each step
