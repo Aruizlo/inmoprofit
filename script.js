@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const chartText = document.getElementById('roi-chart-text');
         if (!chartText) return;
 
-        const targetPercentage = 25; // The percentage to animate to
+        // CAMBIO: Porcentaje objetivo actualizado a 15%
+        const targetPercentage = 15; 
         let start = 0;
         const duration = 1500; // Animation duration in milliseconds
         const stepTime = 20; // Time between each step
